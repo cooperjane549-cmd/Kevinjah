@@ -21,11 +21,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Grant Gradle permissions
-        run: chmod +x ./gradlew
-
       - name: Build Release APK
-        run: ./gradlew assembleRelease
+        run: ./gradle/wrapper/gradlew assembleRelease
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4

@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         webView.setDownloadListener(downloadListener);
 
         // load the website
-        webView.loadUrl("https://dailyhubke.com);
+        webView.loadUrl("https://dailyhubke.com");
     }
 
     // after the file chosen handled, variables are returned back to MainActivity
